@@ -1,0 +1,12 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-h1 {
+  color: #0ccac4;
+  font-family: 'Bigelow Rules', cursive;
+  font-size:  4rem;
+}
