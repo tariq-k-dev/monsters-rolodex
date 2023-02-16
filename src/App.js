@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import { CardList } from './components/card-list/card-list.component';
-import { SearchBox } from './components/search-box/search-box.component'
+import { SearchBox } from './components/search-box/search-box.component';
 import './App.styles.css';
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
     // fetch('https://jsonplaceholder.typicode.com/users')
     //   .then((response) => response.json())
     //   .then((data) => {
-    //     this.setState({ monsters: data });
+    //     this.setState(() => { monsters: data });
     //   })
     //   .catch((error) => {
     //     console.log('There was error in the API call 😂');
@@ -26,23 +26,28 @@ class App extends Component {
     // ES7 async/await
     (async () => {
       try {
-        const usersResponse = await fetch('https://jsonplaceholder.typicode.com/users');
+        const usersResponse = await fetch(
+          'https://jsonplaceholder.typicode.com/users'
+        );
         const users = await usersResponse.json();
-        this.setState({ monsters: users });
-      } catch(error) {
+        this.setState(() => {
+          return { monsters: users };
+        });
+      } catch (error) {
         console.log('There was error in the API call 😂');
       }
-
     })();
   }
 
-  handleChange = (e) => {
+  handleChange = e => {
     this.setState({ searchField: e.target.value });
-  }
+  };
 
   render() {
     const { monsters, searchField } = this.state;
-    const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField.toLowerCase()));
+    const filteredMonsters = monsters.filter(monster =>
+      monster.name.toLowerCase().includes(searchField.toLowerCase())
+    );
 
     return (
       <div className="app">

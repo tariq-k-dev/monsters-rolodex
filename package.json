@@ -7,7 +7,12 @@
     "gh-pages": "^2.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.4.3",
+    "typescript": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "fs-extra": "^9.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
