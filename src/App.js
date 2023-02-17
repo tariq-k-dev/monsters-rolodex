@@ -40,7 +40,7 @@ class App extends Component {
   }
 
   handleChange = e => {
-    const searchField = e.target.value.toLowerCase();
+    const searchField = e.target.value;
 
     this.setState(() => {
       return { searchField };
