@@ -59,7 +59,7 @@ class App extends Component {
         <h1 id="app-h1">Monsters Rolodex</h1>
         <SearchBox
           placeholder={'search monsters'}
-          onSearchChange={onSearchChange}
+          handleChange={onSearchChange}
         />
         <CardList monsters={filteredMonsters} />
       </div>
