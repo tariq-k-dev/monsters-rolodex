@@ -5,7 +5,7 @@
   align-items: center;
   background-color: #95dada;
   border: 1px solid grey;
-  border-radius: 5px;
+  border-radius: 0.4rem;
   padding: 1rem;
   min-height: 15rem;
   cursor: pointer;
@@ -17,4 +17,13 @@
 
 .card-container:hover {
   transform: scale(1.05);
+}
+
+h1 {
+  font-size: 1.15rem;
+  margin: 0.5rem 0 0.3rem;
+}
+
+p {
+  font-size: 1rem;
 }
