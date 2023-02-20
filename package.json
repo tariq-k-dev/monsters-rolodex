@@ -2,7 +2,7 @@
   "name": "monsters-rolodex",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/tariq-k-dev/monsters-rolodex",
+  "homepage": "https://tariq-k-dev.github.io/monsters-rolodex/",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
