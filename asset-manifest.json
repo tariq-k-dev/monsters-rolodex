@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tariq-k-dev/monsters-rolodex/static/css/main.73e224b8.chunk.css",
+    "main.js": "/tariq-k-dev/monsters-rolodex/static/js/main.af0eda94.chunk.js",
+    "main.js.map": "/tariq-k-dev/monsters-rolodex/static/js/main.af0eda94.chunk.js.map",
+    "runtime-main.js": "/tariq-k-dev/monsters-rolodex/static/js/runtime-main.cbc156de.js",
+    "runtime-main.js.map": "/tariq-k-dev/monsters-rolodex/static/js/runtime-main.cbc156de.js.map",
+    "static/js/2.9c39fcd0.chunk.js": "/tariq-k-dev/monsters-rolodex/static/js/2.9c39fcd0.chunk.js",
+    "static/js/2.9c39fcd0.chunk.js.map": "/tariq-k-dev/monsters-rolodex/static/js/2.9c39fcd0.chunk.js.map",
+    "index.html": "/tariq-k-dev/monsters-rolodex/index.html",
+    "precache-manifest.26d9f530d83a47fe8ac9d78c1a00e7ab.js": "/tariq-k-dev/monsters-rolodex/precache-manifest.26d9f530d83a47fe8ac9d78c1a00e7ab.js",
+    "service-worker.js": "/tariq-k-dev/monsters-rolodex/service-worker.js",
+    "static/css/main.73e224b8.chunk.css.map": "/tariq-k-dev/monsters-rolodex/static/css/main.73e224b8.chunk.css.map",
+    "static/js/2.9c39fcd0.chunk.js.LICENSE.txt": "/tariq-k-dev/monsters-rolodex/static/js/2.9c39fcd0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbc156de.js",
+    "static/js/2.9c39fcd0.chunk.js",
+    "static/css/main.73e224b8.chunk.css",
+    "static/js/main.af0eda94.chunk.js"
+  ]
+}
