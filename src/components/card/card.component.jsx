@@ -1,7 +1,7 @@
 import React from 'react';
 import './card.styles.css';
 
-export const Card = ({ monster }) => {
+const Card = ({ monster }) => {
   const { id, name, email } = monster;
 
   return (
@@ -15,3 +15,5 @@ export const Card = ({ monster }) => {
     </div>
   );
 };
+
+export default Card;

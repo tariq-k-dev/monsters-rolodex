@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { CardList } from './components/card-list/card-list.component';
-import { SearchBox } from './components/search-box/search-box.component';
+import CardList from './components/card-list/card-list.component';
+import SearchBox from './components/search-box/search-box.component';
 import './App.styles.css';
 
 const App = () => {
@@ -24,14 +24,16 @@ const App = () => {
         console.log('There was error in the API call 😂');
       }
     })();
-  }, [monsters]);
+  }, []);
 
   // Update filtered monsters list based on search input changes
-  setFilteredMonsters(
-    monsters.filter(monster =>
-      monster.name.toLowerCase().includes(searchField.toLowerCase())
-    )
-  );
+  useEffect(() => {
+    setFilteredMonsters(
+      monsters.filter(monster =>
+        monster.name.toLowerCase().includes(searchField.toLowerCase())
+      )
+    );
+  }, [monsters, searchField]);
 
   return (
     <div className="app">
