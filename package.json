@@ -4,15 +4,16 @@
   "private": true,
   "homepage": "https://tariq-k-dev.github.io/monsters-rolodex/",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.4.3",
-    "typescript": "^3.2.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.5"
   },
   "devDependencies": {
-    "eslint": "^7.9.0",
-    "fs-extra": "^9.0.0",
-    "gh-pages": "^5.0.0"
+    "eslint": "^8.34.0",
+    "fs-extra": "^11.1.0",
+    "gh-pages": "^5.0.0",
+    "yarn-upgrade-all": "^0.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
