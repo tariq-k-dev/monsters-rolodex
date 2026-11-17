@@ -8,7 +8,7 @@ An interactive React and Vite web application featuring real-time search and fil
 
 - **Real-Time Search Filtering:** Instant case-insensitive filtering by monster name as you type.
 - **Dynamic Monster Directory:** Fetches user profiles from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users) and generates unique robot/monster avatars via [RoboHash](https://robohash.org/).
-- **Responsive CSS Grid Layout:** Fluid card grid (`repeat(auto-fit, minmax(240px, 1fr))`) with clean text wrapping across desktop, tablet, and mobile viewports.
+- **Responsive CSS Grid Layout:** Fluid card grid (`repeat(auto-fit, minmax(240px, 280px))`) with clean text wrapping across desktop, tablet, and mobile viewports.
 - **Fast Vite Build Pipeline:** Configured with Vite 8 and `@vitejs/plugin-react` for sub-second HMR in development and optimized static asset bundling for GitHub Pages.
 
 ## Tech Stack
