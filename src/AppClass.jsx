@@ -14,16 +14,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // fetch('https://jsonplaceholder.typicode.com/users')
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     this.setState(() => { monsters: data });
-    //   })
-    //   .catch((error) => {
-    //     console.log('There was error in the API call 😂');
-    //   });
-
-    // ES7 async/await
     (async () => {
       try {
         const usersResponse = await fetch(
