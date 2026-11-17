@@ -20,13 +20,14 @@
     transform: scale(1.05);
 }
 
-h1 {
+.card-container h2 {
     font-size: 1.15rem;
     margin: 0.5rem 0 0.3rem;
+    text-align: center;
+    text-wrap: balance;
 }
 
 .card-container p {
     overflow-wrap: anywhere;
-    font-size: clamp(0.85rem, 1.1vw, 1rem);
     font-size: 1rem;
 }

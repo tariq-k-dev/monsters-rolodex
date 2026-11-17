@@ -9,7 +9,7 @@ const Card = ({ monster }) => {
         src={`https://robohash.org/${id}?set=set2&size=180x180`}
         alt="monster"
       />
-      <h1>{name}</h1>
+      <h2>{name}</h2>
       <p>{email}</p>
     </div>
   );
