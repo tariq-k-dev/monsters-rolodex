@@ -1,68 +1,92 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Monsters Rolodex
+
+An interactive React and Vite web application featuring real-time search and filtering across a responsive directory of monster profiles.
+
+**Live Demo:** [https://tariq-k-dev.github.io/monsters-rolodex/](https://tariq-k-dev.github.io/monsters-rolodex/)
+
+## Features
+
+- **Real-Time Search Filtering:** Instant case-insensitive filtering by monster name as you type.
+- **Dynamic Monster Directory:** Fetches user profiles from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users) and generates unique robot/monster avatars via [RoboHash](https://robohash.org/).
+- **Responsive CSS Grid Layout:** Fluid card grid (`repeat(auto-fit, minmax(240px, 1fr))`) with clean text wrapping across desktop, tablet, and mobile viewports.
+- **Fast Vite Build Pipeline:** Configured with Vite 8 and `@vitejs/plugin-react` for sub-second HMR in development and optimized static asset bundling for GitHub Pages.
+
+## Tech Stack
+
+- **Framework:** React 18
+- **Build Tool:** Vite 8 (`@vitejs/plugin-react`)
+- **Package Manager:** pnpm
+- **Styling:** CSS3 (CSS Grid, Flexbox, responsive typography)
+- **Deployment:** GitHub Pages (`gh-pages`)
+
+## Project Structure
+
+```text
+monsters-rolodex/
+├── public/                 # Static assets (favicon, manifest)
+├── src/
+│   ├── components/
+│   │   ├── card/           # Individual monster profile card component & styles
+│   │   ├── card-list/      # Responsive CSS Grid container component & styles
+│   │   └── search-box/     # Accessible search input component & styles
+│   ├── App.jsx             # Functional component implementation
+│   ├── AppClass.jsx        # Class component reference implementation
+│   └── index.jsx           # Application entry point
+├── index.html              # Vite HTML template
+└── vite.config.js          # Vite configuration with GitHub Pages base path
+```
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v20 or later recommended)
+- [pnpm](https://pnpm.io/)
+
+### Installation & Local Development
+
+1. Clone the repository:
+
+    Bash
+
+    ```bash
+    git clone [https://github.com/tariq-k-dev/monsters-rolodex.git](https://github.com/tariq-k-dev/monsters-rolodex.git)
+    cd monsters-rolodex
+    ```
+
+2. Install dependencies:
+
+    Bash
+
+    ```bash
+    pnpm install
+    ```
+
+3. Start the local development server:
+
+    Bash
+
+    ```bash
+    pnpm dev
+    ```
+
+    Open http://localhost:5173/monsters-rolodex/ in your browser.
 
 ## Available Scripts
 
-In the project directory, you can run:
+| **Command**    | **Description**                                              |
+| -------------- | ------------------------------------------------------------ |
+| `pnpm dev`     | Starts the Vite development server with Hot Module Replacement (HMR). |
+| `pnpm build`   | Bundles the application for production into the `dist/` directory. |
+| `pnpm preview` | Serves the production `dist/` build locally for verification. |
+| `pnpm deploy`  | Runs `pnpm build` and publishes `dist/` to the `gh-pages` branch. |
 
-### `npm start`
+## Deployment
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project is configured for automated static deployment to GitHub Pages via `gh-pages` with `base: '/monsters-rolodex/'` set in `vite.config.js`:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Bash
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```bash
+pnpm deploy
+```
